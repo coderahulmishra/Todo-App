@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="searchContainer listContainer">
+            <input id="taskInput" type="text" placeholder="Enter Your Task Here....">
+            <button id="taskAddBtn">ADD</button>
+        </div>
+        <div class="filterContainer listContainer">
+            <select id="taskFilter">
+                <option >Filter Lists</option>
+                <option value="Today">Today</option>
+                <option value="Tomorrow">Tomorrow</option>
+                <option value="Yesterday">Yesterday</option>
+                <option value="Next Week">Next Week</option>
+            </select>
+        </div>
+        <div class="taskContainer"></div>
+    </div>
+</body>
+</html>

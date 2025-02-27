@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+input,button,select{
+    height: 100%;
+    border: none;
+    outline: none;
+}
+input{
+    flex: 1;
+    padding: 0 10px;
+}
+button{
+    padding: 0 20px;
+    font-weight: 600;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+select{
+    border-radius: 4px;
+    box-shadow: 0 0 3px 0 black;
+    padding: 0 12px;
+}
+.container .listContainer{
+    border: 1px solid black;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container .filterContainer{
+    padding: 0 20px;
+}
+.container .taskContainer{
+    border: 1px solid black;
+    flex: 1;
+}
+.checkbox{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.complete .checkbox{
+    border: 1px solid green;
+}
+.complete input{
+    color: green;
+    text-decoration: line-through;
+}
+input:disabled{
+    color: black;
+    background-color: transparent;
+}
