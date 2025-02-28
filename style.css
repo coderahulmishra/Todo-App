@@ -60,14 +60,14 @@ select{
     margin-left: 10px;
     cursor: pointer;
 }
+input:disabled{
+    color: black;
+    background-color: transparent;
+}
 .complete .checkbox{
     border: 1px solid green;
 }
 .complete input{
     color: green;
     text-decoration: line-through;
-}
-input:disabled{
-    color: black;
-    background-color: transparent;
 }
